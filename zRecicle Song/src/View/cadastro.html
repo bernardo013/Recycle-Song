@@ -6,49 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cadastro.css">
     <script src="https://kit.fontawesome.com/93a6f03107.js" crossorigin="anonymous"></script>
+
     <title>Cadastro</title>
 </head>
-<!--Feito por Bernardo 
-    Abaixo o formulario para preencher o cadastro-->
-<body>
-
-    <div id="form">
-        <form action="">
+<body> 
+    
+    <div id="form" method="POST"> <!-- Bernardo// método de envio POST -->
+        <form action=""> 
             <h2 class="tittle">Cadastrar</h2>
 
-            <label for="username">Nome:</label>
-            <div class="input">
-                <i class="fa-solid fa-user"></i>
-                <input id="username" name="username" placeholder="Nome Completo" type="text">
-            </div>
 
+            <label for="username">Nome:</label>  <!------ Nome ------> <!-- Bernardo -->
+            <div class="input">
+                <i class="fa-solid fa-user"></i> 
+                <input id="username" name="username" placeholder="Nome Completo" type="text" required>
+                <br><span class="erro"></span> <!-- deixa a caixinha de preenchimento vermelha -->
+
+
+            </div>
+                   <!--  ------ Email --------> <!-- Bernardo -->
             <label for="email">Email:</label>
             <div class="input">
                 <i class="fa-solid fa-envelope"></i>
-                <input id="email" name="email" placeholder="Email" type="text" >
+                <input id="email" name="email" placeholder="Email" type="text" required>
+                <br><span class="erro"></span> <!--deixa a caixinha de preenchimento vermelha-->
             </div>
 
+
+                  <!-- ------ Senha ------ --> <!-- Bernardo -->
             <label for="senha">Senha:</label>
             <div class="input">
                 <i class="fa-solid fa-lock"></i>
-                <input id="senha" name="senha" placeholder="Senha de acesso" type="password">
+                <input id="senha" name="senha" placeholder="Senha de acesso" type="password" required>
+                <br><span class="erro"></span> <!--deixa a caixinha de preenchimento vermelha -->
             </div>
 
+
+                   <!-- ------Telefone------> <!-- Bernardo -->
             <label for="Telefone">Telefone:</label>
             <div class="input">
                 <i class="fa-solid fa-mobile-retro"></i>
-                <input id="Telefone" name="Telefone" placeholder="Número De Telefone" type="tel">
+                <input id="Telefone" name="Telefone" placeholder="Número De Telefone" type="tel" required>
+                <br><span class="erro"></span> <!--deixa a caixinha de preenchimento vermelha -->
             </div>
+
+
+            <!--------Botão de Envio------->- <!-- Bernardo -->
                  <br>
             <div id="btn">
-                <button type="submit">Cadastrar</button>
+          <button type="submit">Cadastrar</button>
+                
+
 
             </div>
-
         </form>
-
-    </div>
-
-
+    </div>   
 </body>
-</html> 
+</html>
